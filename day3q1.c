@@ -6,27 +6,27 @@ int main() {
     int found_index = -1;
     int comparisons = 0;
 
-    // Input size
+    
     if (scanf("%d", &n) != 1) return 0;
 
-    // Input array elements
+    
     for (i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
 
-    // Input key to search
+    
     scanf("%d", &k);
 
-    // Linear Search Logic
+   
     for (i = 0; i < n; i++) {
-        comparisons++; // Increment comparison count for every check
+        comparisons++; 
         if (arr[i] == k) {
             found_index = i;
-            break; // Stop searching once found
+            break; 
         }
     }
 
-    // Output results
+    
     if (found_index != -1) {
         printf("Found at index %d\n", found_index);
     } else {
@@ -36,10 +36,6 @@ int main() {
 
     return 0;
 }
-
-// This code performs a linear search on an array to find a specified key.
-// It counts the number of comparisons made during the search and outputs the index of the found element
-// or indicates if the element was not found, along with the total comparisons made.            
 
 // Example Input/Output: 5
 // Enter number of elements in array: 5
